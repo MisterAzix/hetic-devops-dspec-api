@@ -1,5 +1,7 @@
 # 🐍 Hetic DSPEC Application 🐍
 
+Look at the [HETIC DSPEC infra repository](https://github.com/MisterAzix/hetic-devops-dspec-infra) for more information about the project.
+
 ## Result
 
 ### Docker image is correctly built and pushed to the registry
