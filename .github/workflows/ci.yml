@@ -40,3 +40,13 @@ jobs:
         env:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+
+      # TODO : Add a step to connect to the EMR primary node
+      ## This step will use the SSH action to connect to the EMR primary node
+
+      # TODO : Add a step to authenticate to ECR
+      ## This step will use the AWS CLI to authenticate to ECR
+      ## TOKEN=$(aws ecr get-authorization-token --output text --query 'authorizationData[].authorizationToken')
+      ## curl -i -H "Authorization: Basic $TOKEN" https://${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/v2/${{ secrets.REPOSITORY_NAME }}/tags/list
+
+      # TODO : Add a step to run spark-submit on the EMR cluster
